@@ -27,22 +27,22 @@
     <link rel="stylesheet" href="{{asset('backend/assets/css/header-colors.css')}}" />
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css">
 
-    <title>Admin Dashboard </title>
+    <title>Instructor Dashboard </title>
 </head>
 
 <body>
     <!--wrapper-->
     <div class="wrapper">
         <!--sidebar wrapper -->
-        @include('admin.body.sidebar')
+        @include('instructor.body.sidebar')
         <!--end sidebar wrapper -->
         <!--start header -->
-        @include('admin.body.header')
+        @include('instructor.body.header')
 
         <!--end header -->
         <!--start page wrapper -->
         <div class="page-wrapper">
-            @yield('admin')
+            @yield('instructor')
         </div>
         <!--end page wrapper -->
         <!--start overlay-->
@@ -51,7 +51,7 @@
         <!--Start Back To Top Button-->
         <a href="javaScript:;" class="back-to-top"><i class='bx bxs-up-arrow-alt'></i></a>
         <!--End Back To Top Button-->
-        @include('admin.body.footer')
+        @include('instructor.body.footer')
     </div>
     <!--end wrapper-->
 
